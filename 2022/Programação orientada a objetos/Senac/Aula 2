@@ -1,0 +1,32 @@
+class Cliente {
+    nome = "";
+    cpf = ""; 
+}
+class ContaCorrente {
+    agencia = "";
+    saldo = "";
+    cliente = "";
+
+    depositar (valor) {
+        if (valor > 0) {
+            this.saldo += valor;    
+        }
+    }
+}
+
+var conta = new ContaCorrente ();
+    conta.agencia = "1001";
+    conta.depositar(300);
+    conta.cliente = new Cliente();
+    conta.cliente.nome = "Maria";
+    conta.cliente.cpf = 22222222222;
+
+var conta2 = new ContaCorrente ();
+    conta2.agencia = 1002;
+    conta2.depositar(1000);
+    conta2.cliente = new Cliente ();
+    conta2.cliente.nome = "João"; 
+    conta2.cliente.cpf = 11111111111;
+
+console.log (conta);
+console.log (conta2);
