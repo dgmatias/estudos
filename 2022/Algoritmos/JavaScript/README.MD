@@ -1,1 +1,1 @@
-Aqui irá ficar os meu algoritmos usando o JavaScript
+Aqui irá ficar os meu algoritmos usando o JavaScript.
