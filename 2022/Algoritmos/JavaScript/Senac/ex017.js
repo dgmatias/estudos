@@ -1,14 +1,21 @@
-var n1 = Number(prompt('Digite um número'));
-var limitador = Number(prompt('Digite um número'));
-if (n1 > limitador) {
-    aux = limitador;
-    limitador = n1;
-    n1 = aux;
-}
+var continuar = false;
+while (continuar === false) {
 
-while (n1 <= limitador) {
-    if (n1 % 2 === 0) {
-        document.writeln (`O ${n1} é par `);
+  var limiteInf = Number(prompt('Digite um número'));
+  var limiteSup = Number(prompt('Digite outro número'));
+  
+  if (limiteInf > limiteSup) {
+    continuar = confirm ('O primeiro número é maior que o segundo deseja continuar assim mesmo ?');
+    aux = limiteInf;
+    limiteInf = limiteSup;
+    limiteSup = aux;
+  } else {
+      break;
+    } 
+}
+while (limiteInf <= limiteSup) {
+    if (limiteInf % 2 === 0) {
+        document.writeln (limiteInf);
     }
-    n1++;
+    limiteInf++;
 }
