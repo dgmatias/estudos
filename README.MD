@@ -1,1 +1,1 @@
-Este é meu repositório de  estudos
+Este é meu repositório de  estudos.
