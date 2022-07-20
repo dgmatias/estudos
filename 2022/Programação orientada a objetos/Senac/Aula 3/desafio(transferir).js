@@ -25,7 +25,8 @@ class ContaCorrente {
 
     transferir (valor) {
         if (valor > 0 && valor <= this._saldo) {
-            return  this._saldo -= valor;
+             this._saldo -= valor;
+             return valor 
         }
     }
 
@@ -52,6 +53,5 @@ var conta2 = new ContaCorrente ();
     conta2.sacar (0);
     conta2._saldo += transferido
        
-
 console.log (conta);
 console.log (conta2);
